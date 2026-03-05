@@ -36,6 +36,26 @@ Baseline difference-in-differences estimates suggest that PSD2 is associated wit
 
 Event-study specifications indicate that the shift emerges gradually after implementation.
 
+## Key Empirical Results
+
+### Event Study
+
+![Event Study](figures/Fig18_1_eventstudy_bankshare_ct.png)
+
+Dynamic treatment effects relative to the PSD2 implementation year.
+
+### Pre-Trends Diagnostic
+
+![Pretrends](figures/Fig16_3_pretrends_indexed_bankshare_ct.png)
+
+Indexed payment shares for EU and control countries prior to PSD2.
+
+### Baseline DiD Estimates
+
+![DiD](figures/Fig17b_beta_stability_controls.png)
+
+Coefficient stability across baseline and controlled specifications.
+
 
 ## Repository Structure
 
