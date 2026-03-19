@@ -14,6 +14,10 @@ Stockholm University — MSc Economics (Econometrics Track)
 
 Did PSD2 increase the use of bank-based payments relative to card payments in Europe?
 
+## Contribution
+
+This project demonstrates how standard difference-in-differences estimates can be misleading in the presence of differential pre-trends. By incorporating country-specific trends and combining event-study and placebo diagnostics, the analysis provides an identification-aware re-evaluation of PSD2's effects.
+
 
 ## Identification Strategy
 
@@ -29,33 +33,42 @@ Outcome variables:
 • BankShare = credit transfers / (credit transfers + card payments)  
 • BankCardRatio = credit transfers / card payments
 
+To address differential pre-trends between EU and control countries, the analysis additionally includes specifications with country-specific linear time trends.
+
 
 ## Main Results
 
-Baseline difference-in-differences estimates suggest that PSD2 is associated with an increase in the share of bank-based payments relative to card payments.
+The empirical results provide no evidence that PSD2 generated a measurable shift toward bank-based payments at the aggregate level.
 
-Event-study specifications indicate that the shift emerges gradually after implementation.
+Event-study estimates show no structural break around the 2018 implementation, with payment dynamics continuing along pre-existing trends.
+
+While baseline difference-in-differences estimates suggest negative effects, these are driven by differential pre-trends between EU and control countries. Once country-specific trends are accounted for, the estimated treatment effects attenuate toward zero.
+
+The findings therefore indicate that PSD2 did not produce a detectable change in payment composition in the short to medium run.
 
 ## Key Empirical Results
 
-### Event Study
+### Event Study (Primary Result)
 
 ![Event Study](figures/Fig18_1_eventstudy_bankshare_ct.png)
 
-Dynamic treatment effects relative to the PSD2 implementation year.
+No structural break around PSD2 implementation. Coefficients remain close to zero post-2018.
+
+---
+
+### Trend-Augmented vs Baseline DiD
+
+![Trend Comparison](figures/Fig17g_trend_vs_baseline_comparison.png)
+
+Baseline estimates suggest negative effects, but these disappear once country-specific trends are included.
+
+---
 
 ### Pre-Trends Diagnostic
 
 ![Pretrends](figures/Fig16_3_pretrends_indexed_bankshare_ct.png)
 
-Indexed payment shares for EU and control countries prior to PSD2.
-
-### Baseline DiD Estimates
-
-![DiD](figures/Fig17b_beta_stability_controls.png)
-
-Coefficient stability across baseline and controlled specifications.
-
+EU countries exhibit declining relative use of bank-based payments prior to PSD2.
 
 ## Repository Structure
 
