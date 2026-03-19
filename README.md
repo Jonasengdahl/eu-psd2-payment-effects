@@ -110,4 +110,4 @@ Package versions are managed using `renv`.
 
 A detailed description of the full empirical pipeline is available in:
 
-pipeline_documentation.md
+[`pipeline_documentation.md`](pipeline_documentation.md)
