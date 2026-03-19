@@ -268,6 +268,36 @@ Fig17b_beta_stability_controls.png
 
 ---
 
+17f_trend_augmented_did.R
+
+Purpose
+
+Trend-augmented DiD specification  
+Adds country-specific linear time trends  
+Tests whether baseline estimates reflect differential pre-trends  
+
+Outputs
+
+tab17f_trend_augmented_did_latex.tex  
+tab17f_trend_augmented_did_raw.csv  
+
+---
+
+17g_compare_baseline_vs_trend_augmented.R
+
+Purpose
+
+Direct comparison of baseline and trend-augmented DiD estimates  
+Highlights attenuation of coefficients when accounting for country-specific trends  
+Used for main interpretation of identification  
+
+Outputs
+
+tab17g_baseline_vs_trend_augmented_latex.tex  
+tab17g_baseline_vs_trend_augmented_raw.csv  
+
+---
+
 17e_placebo_did.R
 
 Purpose
@@ -311,7 +341,6 @@ tab19_values_did_latex.tex
 tab19b_values_did_controls_latex.tex  
 Fig19_values_did_beta.png  
 Fig19b_values_beta_stability_controls.png  
-
 ---
 
 🟦 STAGE 6 — Robustness Branch: Switzerland (CH)
