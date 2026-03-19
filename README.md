@@ -52,15 +52,23 @@ The findings therefore indicate that PSD2 did not produce a detectable change in
 
 ![Event Study](figures/Fig18_1_eventstudy_bankshare_ct.png)
 
-No structural break around PSD2 implementation. Coefficients remain close to zero post-2018.
+No structural break around PSD2 implementation. Post-2018 coefficients do not indicate a clear deviation from prior dynamics.
 
 ---
 
-### Trend-Augmented vs Baseline DiD
+### Baseline DiD with Controls
 
-![Trend Comparison](figures/Fig17g_trend_vs_baseline_comparison.png)
+![Baseline DiD](figures/Fig17b_beta_stability_controls.png)
 
-Baseline estimates suggest negative effects, but these disappear once country-specific trends are included.
+Baseline difference-in-differences estimates are negative and relatively stable across control specifications.
+
+---
+
+### Trend-Augmented DiD
+
+![Trend-Augmented DiD](figures/Fig17f_beta_stability_trend_augmented.png)
+
+Once country-specific linear trends are included, the estimated treatment effects attenuate sharply toward zero, indicating that the baseline estimates were driven by differential pre-trends rather than a causal effect of PSD2.
 
 ---
 
@@ -68,7 +76,11 @@ Baseline estimates suggest negative effects, but these disappear once country-sp
 
 ![Pretrends](figures/Fig16_3_pretrends_indexed_bankshare_ct.png)
 
-EU countries exhibit declining relative use of bank-based payments prior to PSD2.
+EU countries exhibit declining relative use of bank-based payments prior to PSD2, motivating the trend-augmented specification.
+
+---
+
+The direct comparison between baseline and trend-augmented specifications is reported in `tab17g_baseline_vs_trend_augmented_raw.csv`, which documents the attenuation of the estimated treatment effects once country-specific trends are included.
 
 ## Repository Structure
 
