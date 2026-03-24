@@ -24,6 +24,7 @@ The project evaluates the association between PSD2 (implemented from 2018) and p
 
 ## Folder structure (overview)
 
+```text
 data/
 ├── raw/
 │   ├── ecb/
@@ -51,6 +52,7 @@ outputs/
 └── logs/
 
 scripts/
+```
 
 ---
 
