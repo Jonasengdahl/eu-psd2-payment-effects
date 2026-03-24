@@ -40,6 +40,20 @@ Outcome variables:
 
 To address differential pre-trends between EU and control countries, the analysis additionally includes specifications with country-specific linear time trends.
 
+## Data
+
+All data used in this project is publicly available:
+
+- ECB Statistical Data Warehouse
+- BIS Statistics
+- World Bank
+
+To fully reproduce the analysis:
+
+1. Download raw data as described in `pipeline_documentation.md`
+2. Place files in `data/raw/`
+3. Run scripts sequentially from `/scripts`
+
 
 ## Main Results
 
