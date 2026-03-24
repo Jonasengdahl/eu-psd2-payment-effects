@@ -29,10 +29,10 @@ data/
 │   ├── ecb/
 │   ├── bis/
 │   ├── bis_with_CH/
-│   └── controls/
-│       ├── worldbank/
-│       ├── eurostat/
-│       └── oecd/
+│   ├── controls/
+│   │   ├── worldbank/
+│   │   ├── eurostat/
+│   │   └── oecd/
 ├── intermediate/
 │   ├── ecb/
 │   ├── bis/
@@ -44,10 +44,12 @@ data/
 │   ├── bis_with_CH/
 │   ├── controls/
 │   └── panel/
+
 outputs/
 ├── tables/
 ├── figures/
 └── logs/
+
 scripts/
 
 ---
